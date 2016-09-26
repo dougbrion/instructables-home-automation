@@ -30,7 +30,7 @@ So first of all we want to check if the relay is switching.
 
 Wire up the relay as shown in the diagram, make sure that the **JD-VCC** and **VCC** pins are bridged if you are powering the relay from your arduino. If they are not bridged you will see the LED turning on and off every 2 seconds but there will not be the clicking sound of the relay switching.
 
-```
+```cpp
 #define relay 2    //attaches the relay to pin 2
 
 void setup()
@@ -52,7 +52,7 @@ First off wire up the circuit as shown above. I have used a breadboard and made 
 
 Here is the code I have written for this 2 switch relay. As an example I have it controlling a kettle and lamp.
 
-```
+```cpp
 String voice;
 #define relay1 2    //Connect relay1 to pin 2
 #define relay2 3    //Connect relay2 to pin 3
@@ -130,7 +130,7 @@ The outline to follow is this:
 
 When you upload the code to your Arduino, make sure you *unplug pins 0 and 1* otherwise you will probably get this error:
 
-```
+```bash
 avrdude: stk500_getsync(): not in sync: resp=0x00
 ```
 
@@ -160,4 +160,4 @@ Hope that was informative and you were successful.
 
 Electricity is dangerous so please be careful!!!!
 
-The possibilities for this are endless - you can add loads of devices and then create functions in order to control several at once. 
+The possibilities for this are endless - you can add loads of devices and then create functions in order to control several at once.
